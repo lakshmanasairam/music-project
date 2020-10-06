@@ -1,0 +1,37 @@
+<div class="container">
+  <h1>Details of product</h1>
+  <div class="row">
+    <table class="table table-hover">
+      <tr>
+        <td>Song Id</td>
+        <td>{{ songById.songid | number }}</td>
+      </tr>
+      <tr>
+        <td>SongName</td>
+        <td>{{ songById.songname | uppercase }}</td>
+      </tr>
+      <tr>
+        <td>SongAlbum</td>
+        <td>{{ songById.songalbum | lowercase }}</td>
+      </tr>
+      <tr>
+        <td>SongAtrist</td>
+        <td>{{ songById.songartist | uppercase }}</td>
+      </tr>
+      <tr>
+        <td>Genre</td>
+        <td>{{ songById.genre }}</td>
+      </tr>
+      <tr>
+        <td>Image</td>
+        <td>
+          <img src="{{ songById.image }} " style="height: 150px; width: 150px;" />
+        </td>
+      </tr>
+      <tr>
+        <td>RelaseDate</td>
+        <td>{{ songById.releasedate | date: "dd-MM-yyy" }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="container">
+  <h4>Add Song</h4>
+  <div class="row">
+    <div class="col-lg-6">
+      <form #userData="ngForm" (ngSubmit)="onSubmit()">
+
+        <!-- {{userData.value | json}}
+        <hr>
+        {{userModel | json}} -->
+
+        <div class="form-group">
+          <label>SongId</label>
+          <input #sid="ngModel"  type="text" class="formControl" [(ngModel)]="userModel.songid" name="songid"  autocomplete="off" required >
+        </div>
+
+        <div class="form-group">
+          <label>SongName</label>
+          <input #sname="ngModel" type="text" class="formControl" [(ngModel)]="userModel.songname" name="songname" autocomplete="off" required >
+        </div>
+
+        <div class=" form-group">
+          <label>SongAlbum</label>
+          <input #salbum="ngModel" type="text" class="formControl" [(ngModel)]="userModel.songalbum" name="songalbum" autocomplete="off" required >
+        </div>
+
+        <div class=" form-group">
+          <label>SongArtist</label>
+          <input #sartist="ngModel" type="text" class="formControl"  [(ngModel)]="userModel.songartist" name="songartist" autocomplete="off" required >
+        </div>
+
+        <div class=" form-group">
+          <label>Genre</label>
+          <input #genre="ngModel" type="text" class="formControl"  [(ngModel)]="userModel.genre" name="genre" autocomplete="off" required >
+        </div>
+
+        <div class=" form-group">
+          <label>Image</label>
+          <input #image="ngModel" type="text" class="formControl" [(ngModel)]="userModel.image" name="image" autocomplete="off" required >
+        </div>
+
+        <div class=" form-group">
+          <label>RelaseDate</label>
+          <input #relasedate="ngModel" type="date" class="formControl"  [(ngModel)]="userModel.relasedate" name="relasedate" autocomplete="off" required >
+        </div>
+
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<!-- <div class="container">
+  <h1>List Of Songs</h1>
+  <div class="row">
+    <div class="lg-col-6">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-action" *ngFor="let item of songs">
+          <img src="{{item.image }}" width="150" height="150"><br>
+          <a [routerLink]="['/song-detail/',item.songid]">Song:{{item.songname}}</a><br>Movie:{{item.songalbum}}
+          <br>Artist:{{item.songartist}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <h1>List Of Songs</h1>
+  <div class="row">
+    <div class="lg-col-6">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-action" *ngFor="let item of AllSong">
+          <img src="{{item.image }}" width="150" height="150"><br>
+          <a [routerLink]="['/song-detail/',item.songid]">Song:{{item.songname}}</a><br>Movie:{{item.songalbum}}
+          <br>Artist:{{item.songartist}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
