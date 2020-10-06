@@ -10,6 +10,7 @@ import { AddSongComponent } from './add-song/add-song.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { SairamComponent } from './sairam/sairam.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     AddSongComponent,
     HomeComponent,
     HeaderComponent,
+    SairamComponent,
   ],
   imports: [
     BrowserModule,
